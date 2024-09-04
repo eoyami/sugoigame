@@ -241,7 +241,7 @@ table tr td {
     padding: 3px 4px;
 }
 .label-alert {
-    position: absolute;
+    position: static;
 }
 
 .col-sm-12 .main-panel {
@@ -424,6 +424,7 @@ table tr td {
 
 #vertical-menu .submenu {
     position: absolute;
+    width: 100vh;
     bottom: 7vh;
     background: url(../Imagens/1/back.jpg) center repeat;
 }
@@ -1558,10 +1559,6 @@ input.input-warning[type="range"]:focus::-ms-fill-upper {
         background: rgba(0, 0, 0, 0.2);
         border-radius: 5px;
     }
-
-    #header-info {
-    }
-
     .panel-status {
         z-index: 100;
     }
@@ -1670,5 +1667,30 @@ input.input-warning[type="range"]:focus::-ms-fill-upper {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+}
+
+@media (max-width: 992px) {
+    #vertical-menu .submenu {
+        max-height: 28rem;
+        min-height: 28rem;
+        min-width: 140vh;
+    }
+}
+
+
+@media (max-width: 1600px) {
+    #vertical-menu .submenu {
+        max-height: 45rem;
+        min-height: 45rem;
+        min-width: 130vh;
+    }
+}
+
+@media (max-width: 1920px) {
+    #vertical-menu .submenu {
+        max-height: 60rem;
+        min-height: 60rem;
+        min-width: 140vh;
     }
 }

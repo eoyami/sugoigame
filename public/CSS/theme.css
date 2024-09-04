@@ -7642,3 +7642,53 @@ a.thumbnail.active {
 .panel-info .panel-heading {
     border-color: #000;
 }
+
+.menu-vertical {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    justify-items: center;
+}
+
+.akumas-book {
+    background-image: url(../Imagens/akumasbook.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.menu-vertical li {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.menu-vertical a {
+    font-size: 1.4rem;
+    padding: 1.5rem 1.5rem;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.menu-vertical a:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.menu-vertical a > p {
+    padding: 0;
+    margin: 0;
+}
+
+#menu-principal {
+    padding: 1rem 5rem;
+}
+
+.fa-fw {
+    display: none;
+}
